@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 13px;
+  /* font-family: "Roboto Mono", monospace; */
+  font-family: "Roboto Slab", serif;
+
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(196, 194, 194, 0.507);
+}
+label.password {
+  display: block;
+}
+.material-symbols-outlined {
+  position: absolute;
+  font-size: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 11px;
+  min-width: 40px;
+  font-size: 18px !important;
+}
+
+.input-field {
+  border: 1px solid gray;
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+.input-field:focus {
+  outline: none;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+  width: 90%;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+input[type="checkbox"]#signed-input {
+  position: relative;
+  width: 3rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(85, 81, 81);
+  border-radius: 4rem;
+  outline: 0.15rem solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+input[type="checkbox"]#signed-input:before {
+  position: absolute;
+  content: "";
+  top: 0.2rem;
+  left: 0.2rem;
+  width: 1rem;
+  aspect-ratio: 1;
+  background-color: rgb(17, 45, 97);
+  border-radius: 50%;
+  will-change: left, background-color;
+  transition: left 0.25s ease-in-out, background-color 0.25s ease-in-out;
+}
+input[type="checkbox"]#signed-input:checked:before {
+  left: calc(100% - 1.2rem);
+  background-color: yellow;
+}
+
+input[type="checkbox"]#signed-input:checked {
+  background-color: rebeccapurple;
+}
+
+.checkbox-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.25s 0.25s ease-in-out;
+}
+.container {
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  height: 380px;
+  width: 395px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card {
+  height: 100%;
+}
+.img-container {
+  display: flex;
+}
+img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  object-position: center;
+}
+h1 {
+  margin-bottom: 25px;
+}
+.text {
+  position: relative;
+  left: 15px;
+  top: 10px;
+}
+.password {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+button {
+  border-radius: 3px;
+  background-color: rgb(9, 9, 85);
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(55, 55, 153);
+}
+a {
+  color: black;
+  font-weight: 500;
+}
+h1 {
+  font-size: 25px;
+}
